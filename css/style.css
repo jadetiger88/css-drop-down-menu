@@ -19,6 +19,7 @@ body {
 	box-shadow: 0 2px 2px #ccc;
 }
 
+/*add flot clear in the style sheet instead of the html file. */
 #menu:before, 
 #menu:after {
 	content: "";
@@ -29,6 +30,7 @@ body {
 	clear: both;
 }
 
+/*float left the li */
 #menu  li {
 	float: left;
 	background: url("../img/sep.png") no-repeat; 
@@ -77,10 +79,12 @@ body {
 	float: none;
 	text-transform: none;
 }
+
 #menu ul a:hover {
 	background: linear-gradient(#1ebdbe, #107677);
 }
 
+/*Add trianglr pointer to the top for the sub menu items. */
 #menu ul li:first-child > a:after {
 	content: "";
 	position: absolute;
@@ -92,6 +96,7 @@ body {
 
 }
 
+/*Add triangle pointer to the right for the sub-sub menu items. */
 #menu ul ul li:first-child > a:after {
 	left: -6px;
 	top: 50%;
