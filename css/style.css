@@ -155,7 +155,29 @@ body {
 		border-bottom: 8px solid #1ebdbe; 
 	}
 
-	#menu ul {
+	/*Add trianglr pointer to the top for the sub menu items. */
+#menu ul li:first-child > a:after {
+	content: "";
+	position: absolute;
+	left: 40px;
+	top: -6px;
+	border-left: 0px solid transparent; 
+	border-right: 0px solid transparent; 
+	border-bottom: 0px solid #1ebdbe; 
+
+}
+
+/*Add triangle pointer to the right for the sub-sub menu items. */
+#menu ul ul li:first-child > a:after {
+	left: -6px;
+	top: 50%;
+	border-left: 0;
+	border-right: 0px solid #1ebdbe; 
+	border-bottom: 0px solid transparent; 
+	border-top: 0px solid transparent; 
+
+}
+#menu ul {
 		position: static;
 		visibility: visible;
 		opacity: 1;
